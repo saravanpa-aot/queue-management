@@ -45,7 +45,7 @@ objects:
         dockerStrategy:
           "dockerfilePath": "${DOCKER_FILE_PATH}"
           pullSecret:
-            name: docker-creds
+            name: artifactory-creds
       postCommit: { }
       nodeSelector:
       successfulBuildsHistoryLimit: 10
@@ -59,14 +59,14 @@ parameters:
     displayName: Name
     name: NAME
     required: true
-    value: appointment-frontend
+    value: appointment-nginx-frontend
   - description: |
       The URL to your GIT repo, don't use the this default unless
       your just experimenting.
     displayName: Git Repo URL
     name: GIT_REPO_URL
     required: true
-    value: https://github.com/saravanpa-aot/queue-management
+    value: https://github.com/bcgov/queue-management
   - description: The git reference or branch.
     displayName: Git Reference
     name: GIT_REF

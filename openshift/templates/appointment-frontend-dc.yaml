@@ -185,7 +185,7 @@ parameters:
     displayName: Name
     description: The suffix for all created objects
     required: false
-    value: appointment-frontend
+    value: appointment-nginx-frontend
   - name: APPLICATION_DOMAIN
     description: "The exposed hostname that will route to the Vue application"
   - name: API_NAME
@@ -202,40 +202,39 @@ parameters:
   - name: TOOLS_WORKSPACE
     description: The Location for your image streams (Tools Workspace)
     required: true
-    value: 6e0e49-tools
   - name: VUE_APP_ROOT_API
     description: "The new route to API which will be rate limited"
-    value: "https://dev-theq-public.apps.silver.devops.gov.bc.ca/api/v1"
+    value: ""
   - name: BCEID_REG_URL
     description: The BCEID Registration URL.
     required: true
-    value: "https://www.test.bceid.ca/os/?7521&SkipTo=Basic"
+    value: ""
   - name: VUE_APP_GOOGLE_STATIC_MAP_API_KEY
     description: API KEY for Google Map
     required: true
-    value: "AIzaSyDdUTtNy6pLWILtlqHtcaXsFSprFQ9UroI"
+    value: ""
   - name: KEYCLOAK_REALM
     description: "Keycloak Realm"
     required: true
-    value: "vtkayq4c"
+    value: ""
   - name: KEYCLOAK_RESOURCE
     description: "Keycloak client id"
     required: true
-    value: "cfms-appointment-frontend"
+    value: ""
   - name: KEYCLOAK_SECRET
     description: "Keycloak Secret"
-    required: false
+    required: true
   - name: HIDEBCSERVICESCARD
     description: "this is to display/hide BCServices card authentication option"
     required: true
-    value: "false"
+    value: ""
   - name: AUTH_SERVER_URL
     description: "Keycloak authorization url for ex:https://keycloakserver.com/auth/"
     required: true
-    value: "https://dev.oidc.gov.bc.ca/auth/"
+    value: ""
   - name: DISABLE_SMS
     description: "Flag to decide if SMS is disabled"
     required: true
-    value: true
+    value: "true"
     
 

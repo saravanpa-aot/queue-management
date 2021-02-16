@@ -45,7 +45,7 @@ objects:
         dockerStrategy:
           "dockerfilePath": "${DOCKER_FILE_PATH}"
           pullSecret:
-            name: docker-creds
+            name: artifactory-creds
       postCommit: { }
       nodeSelector:
       successfulBuildsHistoryLimit: 10
@@ -59,7 +59,7 @@ parameters:
     displayName: Name
     name: NAME
     required: true
-    value: queue-management-frontend
+    value: queue-management-nginx-frontend
   - description: |
       The URL to your GIT repo, don't use the this default unless
       your just experimenting.
